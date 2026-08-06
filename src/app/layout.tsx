@@ -33,8 +33,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={plusJakartaSans.variable}>
-      <body className={plusJakartaSans.className}>
+    <html lang="en" className={plusJakartaSans.variable} suppressHydrationWarning>
+      <body className={plusJakartaSans.className} suppressHydrationWarning>
         {children}
 </body>
     </html>
