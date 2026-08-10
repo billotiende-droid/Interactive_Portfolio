@@ -76,8 +76,22 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 'nextgen',
+    id: 'sanaa-media-hub',
     number: '02',
+    name: 'Sanaa Media Hub',
+    tagline: 'Creative project management platform for Kenyan creatives',
+    challenge: 'Building a platform where Kenyan creatives — musicians, visual artists, and writers — can manage projects, collaborate, and track deliverables.',
+    solution: 'Developed a project management tool tailored to creative workflows with milestone tracking, file sharing, and client approval stages.',
+    decisions: 'Designed the data model around creative deliverables rather than generic tasks. A song has stems, a design has revisions, a manuscript has drafts — the schema reflects this.',
+    learned: 'Domain modelling matters enormously. Generic project management tools fail creatives because the concepts do not map. Spending time on the domain model before coding paid off.',
+    impact: 'Gives Kenyan creatives a professional tool for managing client work without adapting to tools designed for software teams.',
+    stack: ['Next.js', 'FastAPI', 'PostgreSQL', 'Tailwind CSS'],
+    status: 'Production',
+    liveUrl:'https://sanaa-media-hub.vercel.app'
+  },
+  {
+    id: 'nextgen',
+    number: '03',
     name: 'NextGen Food Court',
     tagline: 'Multi-vendor food ordering platform',
     challenge: 'Building a multi-vendor food ordering system where each vendor manages their own menu, orders, and fulfilment while customers get a unified experience.',
@@ -90,7 +104,7 @@ const projects: Project[] = [
   },
   {
     id: 'safiri',
-    number: '03',
+    number: '04',
     name: 'Safiri Auto Marketplace',
     tagline: 'Kenya vehicle listing and discovery platform',
     challenge: 'Creating a vehicle marketplace for the Kenyan market with rich filtering, image-heavy listings, and seller-buyer communication workflows.',
@@ -103,7 +117,7 @@ const projects: Project[] = [
   },
   {
     id: 'kajiado',
-    number: '04',
+    number: '05',
     name: 'Kajiado AquaShield',
     tagline: 'Water Management & Hydrology Platform',
     challenge: 'Engineering a full-stack platform to handle complex relational water management data models for Kajiado County, enabling accurate hydrology tracking and reporting.',
@@ -116,7 +130,7 @@ const projects: Project[] = [
   },
   {
     id: 'hydroscope',
-    number: '05',
+    number: '06',
     name: 'Hydroscope',
     tagline: 'Water quality monitoring dashboard',
     challenge: 'Visualising water quality sensor data in real time with historical trend analysis for environmental monitoring purposes.',
@@ -127,19 +141,7 @@ const projects: Project[] = [
     stack: ['React', 'FastAPI', 'PostgreSQL', 'Recharts', 'Tailwind CSS'],
     status: 'Completed',
   },
-  {
-    id: 'digital-media-factory',
-    number: '06',
-    name: 'Digital Media Factory',
-    tagline: 'Creative project management platform for Kenyan creatives',
-    challenge: 'Building a platform where Kenyan creatives — musicians, visual artists, and writers — can manage projects, collaborate, and track deliverables.',
-    solution: 'Developed a project management tool tailored to creative workflows with milestone tracking, file sharing, and client approval stages.',
-    decisions: 'Designed the data model around creative deliverables rather than generic tasks. A song has stems, a design has revisions, a manuscript has drafts — the schema reflects this.',
-    learned: 'Domain modelling matters enormously. Generic project management tools fail creatives because the concepts do not map. Spending time on the domain model before coding paid off.',
-    impact: 'Gives Kenyan creatives a professional tool for managing client work without adapting to tools designed for software teams.',
-    stack: ['Next.js', 'FastAPI', 'PostgreSQL', 'Tailwind CSS'],
-    status: 'Production',
-  },
+  
 ];
 
 export default function FeaturedProjectsSection() {
